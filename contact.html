@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="./js/form.js"></script>
 
 </head>
 <body>
@@ -44,11 +47,13 @@
             </div>
         </div>
         <form class="contact-form">
-            <input type="text" placeholder="Seu nome..." required>
-            <input type="email" placeholder="Seu e-mail..." required>
-            <textarea placeholder="Sua mensagem..." required></textarea>
+            <input type="text" name="from_name" placeholder="Seu nome..." required>
+            <input type="email" name="from_email" placeholder="Seu e-mail..." required>
+            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </div>
+
 </body>
+
 </html>
