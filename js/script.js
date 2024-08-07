@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const removeHover = () => {
         firstName.classList.remove('hover');
         lastName.classList.remove('hover');
-        linkprojects.classList.remove('hover');
+        // linkprojects.classList.remove('hover');
     };
 
     firstName.addEventListener('mouseenter', addHover);

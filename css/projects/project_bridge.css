@@ -372,7 +372,7 @@ body {
 
 #userflow-paragraph {
     margin-left: 4%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 130%;
     width: 770px;
@@ -390,13 +390,13 @@ body {
     width: 1000px;
     position: relative;
     right: 10%;
-    bottom: 60%;
+    bottom: 55%;
 }
 
 #userflow-desc {
-    width: 565px;
+    width: 575px;
     text-align: right;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 160%;
     position: relative;
@@ -436,7 +436,7 @@ body {
 
 .wireframes-section {
     padding: 40px;
-    height: 3800px;
+    height: 4000px;
     background: linear-gradient(180deg,
             #111111 5%,
             #FAC800 30%,

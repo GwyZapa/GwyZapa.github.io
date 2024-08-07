@@ -40,8 +40,20 @@ body {
     
 }
 
+
 .navbar-list a.active {
-    text-decoration: underline;
+    position: relative;
+}
+
+.navbar-list a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .navbar-lang a.active {
