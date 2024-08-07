@@ -46,7 +46,9 @@
                 </h4>
             </div>
         </div>
-        <form class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="c3ea46cd-96d8-465e-af88-c8e40f874361">
+
             <input type="text" name="from_name" placeholder="Seu nome..." required>
             <input type="email" name="from_email" placeholder="Seu e-mail..." required>
             <textarea name="message" placeholder="Sua mensagem..." required></textarea>
