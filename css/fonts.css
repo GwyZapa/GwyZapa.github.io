@@ -1,0 +1,224 @@
+/* Museo Sans 100 */
+@font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/MuseoSans-100.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../fonts/MuseoSans-100Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 200 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/MuseoSans-200.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/MuseoSans-200Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 300 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/MuseoSans-300.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/MuseoSans-300Italic.otf') format('opentype');
+  }
+  
+
+  
+  /* Museo Sans 500 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/MuseoSans-500.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/MuseoSans-500Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 600 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/MuseoSans-600.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/MuseoSans-600Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 700 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/MuseoSans-700.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/MuseoSans-700Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 800 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/MuseoSans-800.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/MuseoSans-800Italic.otf') format('opentype');
+  }
+  
+  /* Museo Sans 900 */
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/MuseoSans-900.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/MuseoSans-900Italic.otf') format('opentype');
+  }
+  
+  
+
+/* Museo Sans Rounded 100 */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/MuseoSansRounded-100.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../fonts/MuseoSansRounded-100Italic.otf') format('opentype');
+}
+
+/* Museo Sans Rounded 300 */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/MuseoSansRounded-300.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/MuseoSansRounded-300Italic.otf') format('opentype');
+}
+
+/* Museo Sans Rounded 500 */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/MuseoSansRounded-500.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/MuseoSansRounded-500Italic.otf') format('opentype');
+}
+
+/* Museo Sans Rounded 700 */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/MuseoSansRounded-700.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/MuseoSansRounded-700Italic.otf') format('opentype');
+}
+
+/* Museo Sans Rounded 900 */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/MuseoSansRounded-900.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/MuseoSansRounded-900Italic.otf') format('opentype');
+}
+
+
+
+  @font-face {
+    font-family: 'Fleisch-Wolf';
+    src: url('../fonts/Fleisch-Wolf.otf') format('truetype');
+  }
+  /* BRIDGE */
+  @font-face {
+    font-family: 'Futura-PT';
+    src: url('../fonts/FuturaPT-Bold.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Futura-PT book';
+    src: url('../fonts/FuturaPT-Book.otf') format('truetype');
+  }
+/* GAMEVAULT */
+@font-face {
+  font-family: 'Russo One';
+  src: url('../fonts/RussoOne-Regular.ttf') format('truetype');
+}
+  /* KENAI */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.otf') format('truetype');
+  }
