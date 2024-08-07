@@ -1,8 +1,8 @@
 // Carregar a biblioteca cliente do Google
 gapi.load('client:auth2', function() {
     gapi.client.init({
-        apiKey: process.env.GMAIL_API_KEY,
-        clientId: process.env.GMAIL_CLIENT_ID,
+        apiKey: 'AIzaSyB_fAow_xQWvFGi3UMwgj4PMJrW32o6PTI',
+        clientId: '265372675207-aldhj3tdu0v8j083djcnfat1j2moddv4.apps.googleusercontent.com',
         scope: 'https://www.googleapis.com/auth/gmail.send'
     }).then(function () {
         gapi.auth2.getAuthInstance().signIn().then(function () {
