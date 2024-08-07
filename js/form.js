@@ -1,35 +1,43 @@
-// Carregar a biblioteca cliente do Google
-gapi.load('client:auth2', function() {
-    gapi.client.init({
-        // apiKey: 'AIzaSyB_fAow_xQWvFGi3UMwgj4PMJrW32o6PTI',
-        clientId: '265372675207-aldhj3tdu0v8j083djcnfat1j2moddv4.apps.googleusercontent.com',
-        scope: 'https://www.googleapis.com/auth/gmail.send'
-    }).then(function () {
-        gapi.auth2.getAuthInstance().signIn().then(function () {
-            var email = "guizapa368@gmail.com";
-            var subject = "Subject";
-            var body = "Email body text";
+const { google } = require('googleapis');
+const { OAuth2 } = google.auth;
+require('dotenv').config();
 
-            var message = [
-                'To: ' + email,
-                'Subject: ' + subject,
-                '',
-                body
-            ].join('\n');
+const oAuth2Client = new OAuth2(
+  process.env.GMAIL_CLIENT_ID,
+  process.env.GMAIL_CLIENT_SECRET
+);
 
-            var encodedMessage = btoa(message).replace(/\+/g, '-').replace(/\//g, '_');
-
-            gapi.client.request({
-                path: 'https://www.googleapis.com/gmail/v1/users/me/messages/send',
-                method: 'POST',
-                body: {
-                    raw: encodedMessage
-                }
-            }).then(function(response) {
-                console.log('Email sent successfully:', response);
-            }, function(error) {
-                console.error('Error sending email:', error);
-            });
-        });
-    });
+oAuth2Client.setCredentials({
+  refresh_token: process.env.GMAIL_REFRESH_TOKEN,
 });
+
+async function sendMail() {
+  const gmail = google.gmail({ version: 'v1', auth: oAuth2Client });
+
+  const email = "guizapa368@gmail.com";
+  const subject = "Subject";
+  const body = "Email body text";
+
+  const message = [
+    'To: ' + email,
+    'Subject: ' + subject,
+    '',
+    body
+  ].join('\n');
+
+  const encodedMessage = Buffer.from(message).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+
+  try {
+    const response = await gmail.users.messages.send({
+      userId: 'me',
+      resource: {
+        raw: encodedMessage,
+      },
+    });
+    console.log('Email sent successfully:', response.data);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
+}
+
+sendMail();

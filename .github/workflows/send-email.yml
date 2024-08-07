@@ -12,9 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Run script
         env:
-          GMAIL_API_KEY: ${{ secrets.GMAIL_API_KEY }}
           GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
-        run: |
-          node ./js/form.js
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+        run: node ./js/form.js
