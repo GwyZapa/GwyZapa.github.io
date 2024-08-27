@@ -484,3 +484,102 @@ a{
     text-decoration: none;
     color: white;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .first-name, .last-name {
+        font-size: 80px; /* Reduzir tamanho da fonte */
+    }
+
+    .first-name>.letter:nth-child(1) {
+        font-family: 'Fleisch-Wolf', Arial, sans-serif;
+        font-size: 82px;
+    
+    }
+    .last-name>.letter:nth-child(1) {
+        /* font-family: 'Fleisch-Wolf', Arial, sans-serif; */
+        font-size: 82px;
+    
+    }
+
+    #plus {
+        font-size: 80px; /* Reduzir tamanho da fonte */
+        margin-left: 10px; /* Reduzir espaçamento */
+    }
+
+    .circle {
+        width: 600px; 
+        height: 600px;
+     }
+
+    #link-projects {
+        font-size: 24px; /* Ajuste de tamanho para o link */
+        margin-top: 50px; /* Reduzir o espaçamento superior */
+    }
+
+    #icon-container {
+        width: 36px; /* Reduzir o tamanho do ícone */
+        height: 36px;
+        top: 10px; /* Ajustar posição para não sobrepor conteúdo */
+        right: 20px;
+    }
+
+    #plane-icon {
+        font-size: 16px; /* Reduzir tamanho do ícone */
+    }
+
+    .line {
+        height: 100px; /* Ajustar a altura da linha */
+    }
+
+   
+}
+@media only screen and (max-width: 410px) {
+    .first-name, .last-name {
+        font-size: 70px; /* Reduzir tamanho da fonte */
+    }
+
+    .first-name>.letter:nth-child(1) {
+        font-family: 'Fleisch-Wolf', Arial, sans-serif;
+        font-size: 72px;
+    
+    }
+    .last-name>.letter:nth-child(1) {
+        /* font-family: 'Fleisch-Wolf', Arial, sans-serif; */
+        font-size: 72px;
+    
+    }
+
+    #plus {
+        font-size: 70px; /* Reduzir tamanho da fonte */
+        margin-left: 10px; /* Reduzir espaçamento */
+    }
+
+    .circle {
+        width: 600px; 
+        height: 600px;
+     }
+
+    #link-projects {
+        font-size: 20px; /* Ajuste de tamanho para o link */
+        margin-top: 50px; /* Reduzir o espaçamento superior */
+    }
+
+    #icon-container {
+        width: 36px; /* Reduzir o tamanho do ícone */
+        height: 36px;
+        top: 10px; /* Ajustar posição para não sobrepor conteúdo */
+        right: 20px;
+    }
+
+    #plane-icon {
+        font-size: 16px; /* Reduzir tamanho do ícone */
+    }
+
+    .line {
+        height: 100px; /* Ajustar a altura da linha */
+    }
+
+   
+}
