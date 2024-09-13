@@ -295,7 +295,7 @@ body {
 
 /* Ajuste para as imagens */
 .flex-icontypo img {
-    max-width: 350px; /* Limita o tamanho das imagens */
+    max-width: 80%; /* Limita o tamanho das imagens */
     height: auto;
     border-radius: 10px; /* Bordas arredondadas */
     margin-top: 80px;
@@ -307,7 +307,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 350px; /* Define o tamanho fixo dos cards */
+    width: 80%; /* Define o tamanho fixo dos cards */
     height: 150px; /* Altura fixa igual para ambos os cards */
     padding: 60px 30px;
     border-radius: 15px;
