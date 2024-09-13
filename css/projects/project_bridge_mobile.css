@@ -1,0 +1,655 @@
+body {
+    margin: 0;
+    font-family: 'Museo Sans', Arial, sans-serif;
+    background-color: #111111;
+    color: #fff;
+    overflow-x: hidden;
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #090909;
+    padding: 10px 20px;
+    height: 80px;
+    position: absolute;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.navbar-list,
+.navbar-lang {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-lang li {
+    margin: 0 10px;
+}
+
+.navbar-list a,
+.navbar-lang a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar-list a.active {
+    position: relative;
+}
+
+.navbar-list a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.navbar-lang a.active {
+    color: #E60052;
+}
+
+.navbar-lang {
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+
+/* Estilos para o cabeçalho do projeto em mobile */
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #111111;
+    margin-top: 100px; /* Para afastar da navbar fixa */
+}
+
+.project-title h1 {
+    font-size: 60px; /* Título menor para mobile */
+    margin: 10px 0;
+    font-family: 'Futura-PT', Arial, sans-serif;
+
+}
+
+.project-title p {
+    font-size: 16px; /* Ajuste do parágrafo para mobile */
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Ajustes nas formas coloridas */
+.shapes {
+    display: flex;
+    justify-content: start;
+    /* margin-bottom: 20px; */
+}
+
+.shape {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 10px;
+    border-radius: 0 0 200px 200px;
+}
+
+.shape.yellow {
+    background-color: #FAC800;
+    height: 20vw;
+}
+
+.shape.pink {
+    background-color: #FA00E9;
+    height: 40vw;
+
+}
+
+.shape.cyan {
+    background-color: #00FAEB;
+    height: 30vw;
+
+}
+
+/* Ajustes para a imagem de apresentação no mobile */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-right: 20%;
+}
+
+.image-container img {
+    max-width: 140%;
+    height: 120vw;
+    border-radius: 10px;
+}
+/* Seção de descrição no mobile */
+.project-description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: #111111;
+}
+
+/* Grid container no mobile */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Colocar uma coluna no mobile */
+    gap: 20px;
+}
+
+/* Caixa de descrição no mobile */
+.description-box {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;        /* Cantos arredondados */
+    padding: 20px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Títulos dentro da descrição */
+.description-box h2 {
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Barras coloridas para as caixas */
+.bar-pink,
+.bar-orange {
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.bar-pink {
+    background-color: #FA00E9;
+    height: auto;
+}
+
+.bar-orange {
+    background-color: #FAC800;
+    height: auto;
+}
+
+/* Ajuste no texto */
+.description-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Espaços vazios removidos no mobile */
+.empty {
+    display: none;
+}
+
+
+
+
+/* Seção de cores */
+.colors-section {
+    padding: 40px 10px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.colors-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-family: 'Futura-PT', Arial, sans-serif;
+}
+
+/* Estilo para as caixas de cores */
+.color-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as caixas */
+}
+
+.color-box {
+    display: flex;
+    justify-content: flex-start; /* Alinhamento do texto à esquerda */
+    align-items: flex-end; /* Alinha o texto na parte inferior */
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    color: white; /* Texto branco */
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.color-box.large {
+    width: 250px;
+    height: 250px;
+}
+
+.color-box.small {
+    width: 250px;
+    height: 250px;
+}
+
+.color-box span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Efeito de texto nas caixas com cores mais claras */
+.color-box.light-box span {
+    color: #000; /* Texto em preto para contraste em cores claras */
+}
+
+
+/* Seção Iconography & Typography */
+.icontypo-section {
+    margin-top: 50px;
+
+    padding: 10px 10px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.icontypo-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: 'Futura-PT', Arial, sans-serif;
+}
+
+/* Flex container para Iconography & Typography */
+.flex-icontypo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Ajuste para as imagens */
+.flex-icontypo img {
+    max-width: 400px; /* Limita o tamanho das imagens */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-top: 80px;
+}
+
+/* Estilos para os cards de tipografia */
+.headings-typo, .body-typo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px; /* Define o tamanho fixo dos cards */
+    height: 150px; /* Altura fixa igual para ambos os cards */
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+    margin: 50px 10px -30px 10px; /* Espaçamento entre os cards */
+}
+
+/* Card de Headings */
+.headings-typo {
+    background-color: #161616;
+}
+
+/* Card de Body */
+.body-typo {
+    background-color: #010101;
+}
+
+/* Título dos cards */
+.typocard-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: 'Futura-PT', Arial, sans-serif;
+}
+
+/* Estilos para os textos internos dos cards */
+#headings-font {
+    font-size: 20px;
+    font-weight: 900;
+    /* margin-bottom: 10px; */
+}
+#body-font {
+    font-size: 20px;
+    /* font-weight: 700; */
+    /* margin-bottom: 10px; */
+}
+
+#headings-words,  #headings-num {
+    /* font-size: 16px; */
+    font-weight: 900;
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+
+}
+
+#body-words{
+    font-family: 'Futura-PT book';
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+}
+
+
+
+/* Seção Userflow */
+.userflow-section {
+    padding: 40px 20px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.userflow-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: 'Futura-PT', Arial, sans-serif;
+}
+
+/* Parágrafo inicial do Userflow */
+#userflow-paragraph, #userflow-desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Ajuste para as imagens */
+.userflow-section img {
+    max-width: 100%;  /* Limita o tamanho da imagem a 90% da largura da tela */
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;  /* Bordas arredondadas nas imagens */
+}
+#userflowimg{
+    max-width: 110%;
+    margin-right: 2%;
+}
+
+.sitemap-section {
+    padding: 20px 0;
+    text-align: center; /* Centraliza o conteúdo na seção */
+}
+
+.sitemap-container {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    padding: 20px;
+}
+
+#sitemapimg {
+    max-width: 100%; /* Faz a imagem ocupar no máximo 100% da largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas, se preferir */
+    cursor: pointer; /* Muda o cursor quando o usuário passa o mouse por cima, indicando que é clicável */
+}
+
+
+
+
+
+
+/* Estilos da seção Wireframes */
+.wireframes-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(180deg,
+            #111111 5%,
+            #FAC800 30%,
+            #FA006C 55%,
+            #00FAEB 78%,
+            #0E8A83 85%,
+            #1B1B1B 94%);
+    color: white;
+}
+
+#wireframes-paragraph {
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+/* Estilos da imagem principal */
+#wireframe_mockup {
+    max-width: 100%;
+    height: auto;
+    /* box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+/* Container das imagens wireframes */
+.wireframe-1stContainer-imgs,
+.wireframe-2ndContainer-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    font-family: 'Museo Sans', Arial, sans-serif;
+
+
+}
+
+.wireframe-imgs {
+    text-align: center;
+}
+
+/* Estilos individuais das imagens de wireframe */
+.wireframe-imgs img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Ajuste do texto nas legendas */
+.wireframe-imgs p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+/* Container específico para alinhamento */
+#collabwireframe-container,
+#gigswireframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Alinhamento do texto do Gigs Wireframe */
+.text-right {
+    text-align: right;
+}
+
+
+
+
+
+/* Estilos da seção Aplicações */
+.aplicacoes1-section,
+.aplicacoes2-section,
+.aplicacoes3-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #111111;
+}
+
+.aplicacoes1-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#aplicacoes-paragraph {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Ajuste geral das imagens nas seções */
+.aplicacoes1-section img,
+.aplicacoes2-section img,
+.aplicacoes3-section img {
+    max-width: 103%;
+    height: auto;
+    /* box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* Estilo para a seção final */
+.end-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #111111;
+    color: white;
+}
+
+/* Container para Impacto, Aprendizado e Contato */
+#container-pink,
+#container-orange,
+#container-blue {
+
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    position: relative;
+    right: 8%;
+    text-align: justify;
+    /* padding: 10px; */
+}
+
+/* Título colorido dentro da forma */
+.shape-title-pink,
+.shape-title-orange,
+.shape-title-blue {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 10px 10px; */
+    color: black;
+    border-radius: 0px 200px 200px 0;  /* Forma arredondada na parte superior */
+    width: 92%;
+    height: 70px;
+    margin: 0 auto;
+    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Definir as cores para cada título */
+.shape-title-pink {
+    background-color: #FA00E9;
+}
+
+.shape-title-orange {
+    background-color: #FAC800;
+}
+
+.shape-title-blue {
+    background-color: #00FAEB;
+}
+
+/* Tornar o restante dos parágrafos invisíveis */
+
+#learned-paragraph, #impact-paragraph{
+    margin-left: 10%;
+}
+
+#contact-paragraph {
+    background-color: #383838;
+    border-radius: 0px 80px 80px 0;  /* Forma arredondada na parte superior */
+    padding: 40px;
+    margin-left: 3%;
+
+}
+
+/* Formas invertidas na parte inferior da seção */
+.shapes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+/* Ajustes das formas invertidas */
+.shapes2 .shape {
+    position: relative;
+    bottom: -10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 200px 200px 0 0; /* Inversão das formas */
+}
+
+.shapes2 .yellow {
+    background-color: #FAC800;
+    height: 20vw;
+
+}
+
+.shapes2 .pink {
+    background-color: #FA00E9;
+    height: 40vw;
+
+}
+
+.shapes2 .cyan {
+    background-color: #00FAEB;
+    height: 30vw;
+
+}
+
+
+.endBAR{
+    background-color: #111111;
+    width: 120%;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    bottom: 50px;
+}
