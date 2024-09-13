@@ -3,10 +3,9 @@ body {
     font-family: 'Museo Sans', Arial, sans-serif;
     background-color: #111111;
     color: #fff;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
-
 
 .navbar {
     display: flex;
@@ -28,7 +27,7 @@ body {
 .navbar-list,
 .navbar-lang {
     list-style: none;
-    display: flex;
+    display: none;
     margin: 0;
     padding: 0;
 }
@@ -554,11 +553,11 @@ body {
 #container-orange,
 #container-blue {
 
-    width: 100%;
+    width: 120%;
     max-width: 600px;
     margin-bottom: 40px;
     position: relative;
-    right: 8%;
+    right: 4%;
     text-align: justify;
     /* padding: 10px; */
 }
@@ -644,12 +643,3 @@ body {
 
 }
 
-
-.endBAR{
-    background-color: #111111;
-    width: 120%;
-    height: 100px;
-    z-index: 10;
-    position: relative;
-    bottom: 50px;
-}

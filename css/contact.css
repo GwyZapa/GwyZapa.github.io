@@ -205,6 +205,7 @@ textarea::placeholder {
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
+    
     .navbar-list, .navbar-lang {
         display: none; /* Oculta o menu para ser substituído por um menu hambúrguer */
     }
