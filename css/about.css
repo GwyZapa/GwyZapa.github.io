@@ -179,73 +179,11 @@ html, body {
 }
 
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #090909;
-    padding: 10px 20px;
-    height: 80px;
-    position: fixed;
-    width: 98%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-brand img {
-    height: 30px;
-}
-
-.navbar-list, .navbar-lang {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-list li {
-    margin: 0 20px;
-}
-
-.navbar-lang li {
-    margin: 0 10px;
-}
-
-.navbar-list a, .navbar-lang a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-}
-
-.navbar-list a.active {
-    position: relative;
-}
-
-.navbar-list a.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-.navbar-lang a.active {
-    color: #E60052;
-}
-
-.navbar-lang {
-    font-weight: 800;
-}
 
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-    .navbar-list, .navbar-lang {
-        display: none; /* Oculta o menu para ser substituído por um menu hambúrguer */
-    }
+
 
     .container {
         flex-direction: column; /* Alinha os itens em uma única coluna */

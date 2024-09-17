@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
     <script src="https://apis.google.com/js/api.js"></script>
-    <script type="text/javascript" src="./js/form.js"></script>
+    <!-- <script type="text/javascript" src="./js/form.js"></script> -->
     <link rel="icon" href="./assets/logo_fav3.png">
+    <link rel="stylesheet" href="./css/navbar.css">
 
 </head>
+
 <body>
-    <nav class="navbar">
+    +<nav class="navbar">
         <a href="index.html" class="navbar-brand">
             <img src="./assets/logo.png" alt="Home">
         </a>
-        <ul class="navbar-list">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-list" id="navbar-list">
             <li><a href="projects.html">projetos</a></li>
             <li><a href="about.html">sobre</a></li>
             <li><a class="active" href="contact.html">contato</a></li>
@@ -29,15 +37,17 @@
         </ul>
     </nav>
 
-    
+
+
     <div class="container">
         <div class="card">
             <div class="card-content">
                 <h3 class="card-title">
-                  Vamos criar algo <p id="text-title-change">juntos?</p>
+                    Vamos criar algo <p id="text-title-change">juntos?</p>
                 </h3>
                 <h4 class="card-subtitle">
-                    <p>Ansioso para ouvir suas ideias! preencha o formulário para falarmos sobre seu projeto ou caso prefira envie um email para 
+                    <p>Ansioso para ouvir suas ideias! preencha o formulário para falarmos sobre seu projeto ou caso
+                        prefira envie um email para
                         <a href="mailto:guizapa368@gmail.com">guizapa368@gmail.com</a></p>
                     <div class="link-icons">
                         <a href="https://www.linkedin.com/in/guilherme-zapater/"><i class="fab fa-linkedin"></i></a>
@@ -58,5 +68,6 @@
     </div>
 
 </body>
+<script type="text/javascript" src="./js/nav.js"> </script>
 
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridge Project</title>
     <link rel="stylesheet" href="./css/projects/project_bridge.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/projects/project_bridge_mobile.css" media="(max-width: 768px)"> <!-- Correção da aspa -->
     <link rel="stylesheet" href="css/fonts.css">
   <link rel="icon" href="./assets/logo_fav3.png">
@@ -15,7 +16,12 @@
         <a href="index.html" class="navbar-brand">
             <img src="./assets/logo.png" alt="Home">
         </a>
-        <ul class="navbar-list">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-list" id="navbar-list">
             <li><a href="projects.html">projetos</a></li>
             <li><a href="about.html">sobre</a></li>
             <li><a href="contact.html">contato</a></li>
@@ -25,6 +31,7 @@
             <li><a href="#">EN</a></li>
         </ul>
     </nav>
+    
     <section class="project-header">
         <div class="shapes">
             <div class="shape yellow"></div>
@@ -179,9 +186,9 @@
                 <p id="contact-paragraph">Se precisar de mais informações ou quiser ver mais do meu trabalho, sinta-se à vontade para entrar em contato! 
                     <br>
                     <br>
-                    E-mail: guizapa368@gmail.com
+                    E-mail: <a href="mailto:guizapa368@gmail.com">guizapa368@gmail.com</a>
                     <br>
-                    LinkedIn: https://www.linkedin.com/in/guilherme-zapater/</p>
+                    LinkedIn: <a href="https://www.linkedin.com/in/guilherme-zapater">https://www.linkedin.com/in/guilherme-zapater/</a></p>
                 </div>
             </div>
             <!-- <div class="shapes2">
@@ -193,4 +200,6 @@
         </section>
 
 </body>
+<script src="./js/nav.js"> </script>
+
 </html>

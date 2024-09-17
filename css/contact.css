@@ -7,75 +7,21 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #090909;
-    padding: 10px 20px;
-    height: 80px;
-}
 
-.navbar-brand img {
-    height: 30px;
-}
-
-.navbar-list, .navbar-lang {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-list li {
-    margin: 0 20px;
-}
-.navbar-lang li {
-    margin: 0 10px;
-}
-
-.navbar-list a, .navbar-lang a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    
-}
-
-
-.navbar-list a.active {
-    position: relative;
-}
-
-.navbar-list a.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-.navbar-lang a.active {
-    color: #E60052;
-}
-.navbar-lang{
-    font-weight: 800;
-}
 
 /*CONTACT*/
 
 
 .container {
 
-    width: 100%;
+    width: 98%;
     display: flex;
     gap: 20px;
     padding-top: 80px;
     border-radius: 20px;
     /* align-items: center; */
     justify-content: center;
+    margin-top: 100px;
 }
 
 .card {
@@ -140,7 +86,7 @@ font-size: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%; /* Ajusta a largura para ocupar 100% em telas menores */
+    width: 98%; /* Ajusta a largura para ocupar 100% em telas menores */
     max-width: 650px;
 }
 
@@ -206,6 +152,11 @@ textarea::placeholder {
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     
+    body{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
     .navbar-list, .navbar-lang {
         display: none; /* Oculta o menu para ser substituído por um menu hambúrguer */
     }
@@ -214,7 +165,8 @@ textarea::placeholder {
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
-        padding: 20px;
+        /* padding-left: 20px; */
+        margin-left: 4%;
     }
 
     .card {
