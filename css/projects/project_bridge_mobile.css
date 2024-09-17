@@ -15,7 +15,7 @@ body {
     text-align: center;
     padding: 20px 10px;
     background-color: #111111;
-    margin-top: 100px; /* Para afastar da navbar fixa */
+    margin-top: 70px; /* Para afastar da navbar fixa */
 }
 
 .project-title h1 {
